@@ -9,6 +9,7 @@ class Product_model extends CI_Model {
     }
 
     public function get_all_products() {
+		$this->db->order_by('created_at', 'DESC');
         $query = $this->db->get('products');
         return $query->result();
     }

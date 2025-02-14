@@ -9,6 +9,7 @@ class Products extends CI_Controller {
         $this->load->helper(['url', 'form']);
         $this->load->library('form_validation');
         $this->load->library('session');
+		
     }
 
     public function index() {
